@@ -51,7 +51,7 @@ vehicle_detector_pkg/
 
 - Image extraction summary
   - Total frames: 1122
-  - Resolution: 2200x1740
+  - Resolution: 2200 x 1740
   - Topic name: `/hikcamera/image_1/compressed`
 
 - Detection results screenshot:
