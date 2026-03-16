@@ -39,14 +39,36 @@ vehicle_detector_pkg/
 
 ## 5. How to Run *(Q3.1 — 2 marks)*
 
-*Provide clear, step-by-step instructions:*
+Ensure that you have set up the ROS 1 Noetic environment with Ubuntu 20.04 and opened a terminal before following the steps. Type the command below step by step
 
 1. Clone the repository
+   ```
+   cd ~/catkin_ws/src
+   # copy or clone this repository here
+   ```
 2. Install dependencies
-3. Build the ROS package
+   ```
+   sudo apt update
+   sudo apt install python3-pip
+   pip3 install ultralytics pillow numpy opencv-python
+   ```
+3. Build the workspace
+   ```
+   cd ~/catkin_ws
+   catkin_make
+   source devel/setup.bash
+   ```
 4. Place the rosbag file
+   Open src/vehicle_detection.py and update the bag_path variable to match your local absolute path:
+   ```
+   bag_path = '/path/to/your/downloaded/Ros.bag'
+   ```
 5. Launch the pipeline
-
+   ```
+   cd ~/catkin_ws
+   source devel/setup.bash
+   roslaunch vehicle_detector_pkg vehicle_detection.launch
+   ```
 ## 6. Sample Results
 
 - Image extraction summary
