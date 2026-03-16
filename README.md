@@ -59,11 +59,12 @@ Ensure that you have set up the ROS 1 Noetic environment with Ubuntu 20.04 and o
    source devel/setup.bash
    ```
 4. Place the rosbag file
+
    Open src/vehicle_detection.py and update the bag_path variable to match your local absolute path:
    ```
-   bag_path = '/path/to/your/downloaded/Ros.bag'
+   bag_path = '/path/to/your/downloaded/2026-02-23-15-58-29.bag'
    ```
-5. Launch the pipeline
+6. Launch the pipeline
    ```
    cd ~/catkin_ws
    source devel/setup.bash
