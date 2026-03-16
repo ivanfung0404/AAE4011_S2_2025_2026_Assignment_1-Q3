@@ -11,7 +11,7 @@
 
 ## 2. Detection Method *(Q3.1 — 2 marks)*
 
-*I chose the the **YOLOv8 Nano** model for the pipeline. It is because YOLOv8 Nano have a outstanding performance in high-speed inference and efficiency. Also, since the environment runs inside a WSL2 virtual machine, YOLOv8 is friendly for this situation which can be run easily. So it is suitable for this project which is real-time and resource-constrained applications*
+*I chose the **YOLOv8 Nano** model for the pipeline. It is because YOLOv8 Nano have an outstanding performance in high-speed inference and efficiency. Also, since the environment runs inside a WSL2 virtual machine, YOLOv8 is friendly for this situation which can be run easily. So it is suitable for this project which is real-time and resource-constrained applications*
 
 ## 3. Repository Structure
 ```
@@ -64,7 +64,7 @@ Ensure that you have set up the ROS 1 Noetic environment with Ubuntu 20.04 and o
    ```
    bag_path = '/path/to/your/downloaded/2026-02-23-15-58-29.bag'
    ```
-6. Launch the pipeline
+5. Launch the pipeline
    ```
    cd ~/catkin_ws
    source devel/setup.bash
@@ -93,20 +93,19 @@ The two primary technical skills or concept I gained are What is Ros environment
 
 ### (b) How Did You Use AI Tools? *(2 marks)*
 
-I used AI assistants as a programming tools and a teacher to help me learn new skills and concepts. I asked the AI to help me write the Python script and adjust it until fulfil the requirement. For the benefits of using AI, It is helpful for programming. It can generate the script very fast and with a fully functional application. AT the same time, the limitations is that AI will sometimes give me some outdated or wrong information. I need the verify it by myself to ensure I mix up the concepts.
+I used AI assistants as a programming tool and a teacher to help me learn new skills and concepts. I asked the AI to help me write the Python script and adjust it until fulfil the requirement. For the benefits of using AI, It is helpful for programming. It can generate the script very fast and with a fully functional application. At the same time, the limitation is that AI will sometimes give me some outdated or wrong information. I need the verify it by myself to ensure I mix up the concepts.
  
 ### (c) How to Improve Accuracy? *(2 marks)*
 
-1. Use the latest version, fully trained model. I find out that the current YOLOv8 Nano model have a low accuracy in vehicle detection. It will mix up the type of the vehicle such as bus and truck during the detection. Using the latest version like YOLO26 which is released in January 2026 can help to improve the accuracy.
+1. Use the latest version, fully trained model. I find out that the current YOLOv8 Nano model has a low accuracy in vehicle detection. It will mix up the type of the vehicle such as bus and truck during the detection. Using the latest version like YOLO26 which is released in January 2026 can help to improve the accuracy.
 
-2. Provide a high resolution images. Processing higher-resolution images from the camera can improve detection accuracy. It can provides more detailed pixel data and clearer edge features make the model have a high accuracy during the detection.
+2. Provide a high resolution images. Processing higher-resolution images from the camera can improve detection accuracy. It can provide more detailed pixel data and clearer edge features make the model have a high accuracy during the detection.
 
 ### (d) Real-World Challenges *(2 marks)*
 
-*Discuss two challenges of deploying this pipeline on an actual drone in real time.*
 1. The limits of the environment. There are some factors that affect the application like sudden changes in lighting, vibrations, rain and fog that degrade image quality. It will make the pipeline unusable.
 
-2. Power Consumption and Battery Drain. The heavy computational load will drain the drone’s battery much faster that reducing its maximum flight time and operational range.
+2. Power Consumption and Battery Drain. The heavy computational load will drain the drone’s battery much faster that reduce its maximum flight time and operational range.
 
 ## 9. References
 
