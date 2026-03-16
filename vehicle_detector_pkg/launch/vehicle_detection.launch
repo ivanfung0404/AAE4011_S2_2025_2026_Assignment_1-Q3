@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="vehicle_detector_pkg" type="vehicle_detection.py" name="vehicle_detector_node" output="screen" />
+</launch>
