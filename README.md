@@ -55,6 +55,7 @@ vehicle_detector_pkg/
   - Topic name: `/hikcamera/image_1/compressed`
 
 - Detection results screenshot:
+  ![Vehicle Detection Dashboard](ui_result_sceenshot.png)
   
 
 ## 7. Video Demonstration *(Q3.2 — 5 marks)*
