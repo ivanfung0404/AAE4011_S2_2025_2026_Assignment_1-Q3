@@ -1,6 +1,6 @@
 # AAE4011 Assignment 1 — Q3: ROS-Based Vehicle Detection from Rosbag
 
-> **Student Name:** [FUNG Tsan Wai] | **Student ID:** [25120771D] | **Date:** [15-3-2026]
+> **Student Name:** FUNG Tsan Wai | **Student ID:** 25120771D | **Date:** 15-3-2026
 
 ---
 
@@ -11,7 +11,7 @@
 
 ## 2. Detection Method *(Q3.1 — 2 marks)*
 
-*I chose the the **YOLOv8 Nano** model for the pipeline. Because YOLOv8 Nano effectively serves as an object detector for real-time traffic management.*
+*I chose the the **YOLOv8 Nano** model for the pipeline. It is because YOLOv8 Nano have a outstanding performance in high-speed inference and efficiency. Also, since the environment runs inside a WSL2 virtual machine, YOLOv8 is friendly for this situation which can be run easily. So it is suitable for this project which is real-time and resource-constrained applications*
 
 ## 3. Repository Structure
 ```
@@ -49,18 +49,17 @@ vehicle_detector_pkg/
 
 ## 6. Sample Results
 
-*Include:*
-- Image extraction summary (total frames, resolution, topic name)
-- Detection results (sample screenshot, detection statistics)
+- Image extraction summary
+  - Total frames: 1122
+  - Resolution: 2200x1740
+  - Topic name: `/hikcamera/image_1/compressed`
+
+- Detection results screenshot:
+  
 
 ## 7. Video Demonstration *(Q3.2 — 5 marks)*
 
-**Video Link:** [YouTube (Unlisted)](https://youtu.be/your-link-here)
-
-*The video (1–3 min) should show:*
-- (a) Launching the ROS package
-- (b) The UI displaying detection results
-- (c) A brief explanation of the results
+**Video Link:** https://youtu.be/SwM3xvqDMK0
 
 ## 8. Reflection & Critical Analysis *(Q3.3 — 8 marks, 300–500 words)*
 
