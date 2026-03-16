@@ -44,7 +44,7 @@ Ensure that you have set up the ROS 1 Noetic environment with Ubuntu 20.04 and o
 1. Clone the repository
    ```
    cd ~/catkin_ws/src
-   # copy or clone this repository here
+   git clone https://github.com/ivanfung0404/AAE4011_S2_2025_2026_Assignment_1-Q3/tree/main/vehicle_detector_pkg
    ```
 2. Install dependencies
    ```
